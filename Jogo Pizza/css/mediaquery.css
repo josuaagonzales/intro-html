@@ -1,0 +1,38 @@
+@media screen and (max-width: 1068px) {
+    .gallery,
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 30.8%);
+    }
+
+    header {
+        position: relative;
+        height: 65vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery,
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 48.8%);
+    }
+
+    nav > ul li a {
+        display: none;
+    }
+
+    nav .button-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .gallery,
+    .card {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
